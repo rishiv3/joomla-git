@@ -31,7 +31,7 @@ class JConfig {
 	public $offset = 'UTC';
 	public $mailonline = '1';
 	public $mailer = 'mail';
-	public $mailfrom = 'rishiv3@github.com';
+	public $mailfrom = 'rishi@github.com';
 	public $fromname = 'Git';
 	public $sendmail = '/usr/sbin/sendmail';
 	public $smtpauth = '0';
