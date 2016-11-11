@@ -14,17 +14,17 @@ class plgSystemGit extends JPlugin {
 		// if commit and push times aren't set yet, set them
 		if ($this->params['last_commit_time'] == "")
 		{
-		$time = date('Y-m-d H:i:s');
-		$this->params['last_commit_time'] = $time;
-		$table->set('params', $this->params->toString());
-		$table->store();
+			$time = date('Y-m-d H:i:s');
+			$this->params['last_commit_time'] = $time;
+			$table->set('params', $this->params->toString());
+			$table->store();
 		}
 		if ($this->params['last_push_time'] == "")
 		{
-		$time = date('Y-m-d H:i:s');
-		$this->params['last_push_time'] = $time;
-		$table->set('params', $this->params->toString());
-		$table->store();
+			$time = date('Y-m-d H:i:s');
+			$this->params['last_push_time'] = $time;
+			$table->set('params', $this->params->toString());
+			$table->store();
 		}
 
 		// Setup variables
