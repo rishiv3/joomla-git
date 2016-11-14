@@ -37,7 +37,7 @@ class plgSystemGit extends JPlugin {
 		$remote  		= $this->params->get('git_remote');
 		$remote_branch 	= $this->params->get('git_remote_branch');
 
-		// compare current time to last commit time
+		// compare current time to last commit time // removed 60 to make it commit every min
 		$current_time = date('Y-m-d H:i:s');
 		$git_commit_diff = round((strtotime($current_time) - strtotime($this->params['last_commit_time']))/(60));
 
