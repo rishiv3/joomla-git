@@ -30,11 +30,11 @@ class plgSystemGit extends JPlugin {
 		// Setup variables
 		$repo = new GitRepo(JPATH_ROOT);
 		$repo->git_path = $this->params->get('git_path');
-		$active_branch = $repo->active_branch();
-		$status = $repo->status();
-		$message = $this->params->get('git_message');
-		$remote = $this->params->get('git_remote');
-		$remote_branch = $this->params->get('git_remote_branch');
+		$active_branch 	= $repo->active_branch();
+		$status  		= $repo->status();
+		$message 		= $this->params->get('git_message');
+		$remote  		= $this->params->get('git_remote');
+		$remote_branch 	= $this->params->get('git_remote_branch');
 
 		// compare current time to last commit time
 		$current_time = date('Y-m-d H:i:s');
