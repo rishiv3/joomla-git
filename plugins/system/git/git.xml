@@ -23,7 +23,7 @@
 			<fieldset name="basic">
 				<field name="git_path" type="text" label="Git command or path" description="If git is not available in the $PATH, then update this to the full path to the git application." value="git" />
 				<field name="git_local_branch" type="text" label="Branch to use" description="This will automatically checkout and commit changes to this branch. You need to make sure it is already created though, it will not branch for you." value="staging" />
-				<field name="git_message" type="text" label="Message" description="The automatic commit message. You can use [date] to replace with a timestamp." value="Automatic commit at [date1]" />
+				<field name="git_message" type="text" label="Message" description="The automatic commit message. You can use [date] to replace with a timestamp." value="Automatic commit at [date]" />
 				<field name="git_commit_frequency" type="list" default="Select One" label="Local Commit Frequency" description="How often would you like git to commit changes made on your files to your local git repository?">
 				  <option value="1">Every Hour</option>
 				  <option value="6">Every 6 Hours</option>
