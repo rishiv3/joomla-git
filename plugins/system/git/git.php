@@ -32,7 +32,8 @@ class plgSystemGit extends JPlugin {
 		$repo->git_path = $this->params->get('git_path');
 		$active_branch 	= $repo->active_branch();
 		$status  		= $repo->status();
-		$message 		= $this->params->get('git_message');
+		$msg 		= $this->params->get('git_message');
+		$message 			= str_replace('[date]', date("Y-m-d"), $msg);
 		$remote  		= $this->params->get('git_remote');
 		$remote_branch 	= $this->params->get('git_remote_branch');
 
